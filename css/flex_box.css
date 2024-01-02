@@ -1,0 +1,37 @@
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexbox-item{
+    width: 100px;
+    background-color: tomato;
+    margin: 10px;
+}
+.flexbox-item-1{
+    min-height: 100px;
+}
+.flexbox-item-2{
+    min-height: 150px;
+}
+.flexbox-item-3{
+    min-height: 200px;
+}
+
+@keyframes bobble {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+#hexagon {
+    transition: transform .1s;
+}
+#hexagon:hover{
+    transform: scale3d(1.2,1.2,1) rotate(45deg);
+}
